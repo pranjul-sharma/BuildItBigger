@@ -4,9 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-
-import com.udacity.gradle.builditbigger.utils.NetworkUtils;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -40,11 +37,5 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view) {
-        new NetworkUtils.EndpointsAsyncTask(this).execute();
-//            Intent intent = new Intent(this, JokeDisplayActivity.class);
-//            intent.putExtra(JokeDisplayActivity.JOKE_TO_DISPLAY,jokes.getJoke());
-//            startActivity(intent);
 
-    }
 }
